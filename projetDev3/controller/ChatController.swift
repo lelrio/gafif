@@ -8,16 +8,20 @@ import JSQMessagesViewController
 class ChatController: JSQMessagesViewController {
     var messages = [JSQMessage]()
     
+    //couleur bulle de texte
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     }()
 
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleGreen())
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = false;
+        collectionView.backgroundColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
+        
+        
         
        let defaults = UserDefaults.standard
 
@@ -69,6 +73,7 @@ class ChatController: JSQMessagesViewController {
         })
 
     }
+    
     @IBAction func backButton(_ sender: Any) {
          navigationController?.popViewController(animated: true)
     }
@@ -76,8 +81,7 @@ class ChatController: JSQMessagesViewController {
     {
         let defaults = UserDefaults.standard
 
-       
-        let alert = UIAlertController(title: "Your Display Name", message: "Before you can chat, please choose a display name. Others will see this name when you send chat messages. You can change your display name again by tapping the navigation bar.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Entrez votre nom", message: "avant d'entrer dans le chat, comme ca les autres pourront voir votre nom", preferredStyle: .alert)
 
         alert.addTextField { textField in
 
