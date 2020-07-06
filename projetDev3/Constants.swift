@@ -1,9 +1,10 @@
-//
-//  Constants.swift
-//  projetDev3
-//
-//  Created by Léonard Elrio on 06/07/2020.
-//  Copyright © 2020 Léonard Elrio. All rights reserved.
-//
+import Firebase
 
-import Foundation
+struct Constants
+{
+    struct refs
+    {
+        static let databaseRoot = Database.database().reference()
+        static let databaseChats = databaseRoot.child("chats")
+    }
+}

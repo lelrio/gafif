@@ -35,8 +35,8 @@
 		F9BA10E92492307F002242DA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA10E82492307F002242DA /* HomeController.swift */; };
 		F9BA10EB24923090002242DA /* AccueilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA10EA24923090002242DA /* AccueilController.swift */; };
 		F9BA10ED249233EA002242DA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA10EC249233EA002242DA /* GameController.swift */; };
-		F9D2255524B200EB00056662 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2255424B200EB00056662 /* Message.swift */; };
-		F9D2255724B200FC00056662 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2255624B200FC00056662 /* Chat.swift */; };
+		F9D2256424B340DF00056662 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2256324B340DF00056662 /* Message.swift */; };
+		F9D2256624B353BB00056662 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2256524B353BB00056662 /* Constants.swift */; };
 		F9E9F80F24A0ABD9003A5660 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9F80E24A0ABD9003A5660 /* GameViewController.swift */; };
 		F9E9F81124A0ABE7003A5660 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9F81024A0ABE7003A5660 /* ChatViewController.swift */; };
 		F9E9F81324A0AC0B003A5660 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E9F81224A0AC0B003A5660 /* ProfileViewController.swift */; };
@@ -75,8 +75,8 @@
 		F9BA10E82492307F002242DA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F9BA10EA24923090002242DA /* AccueilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilController.swift; sourceTree = "<group>"; };
 		F9BA10EC249233EA002242DA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		F9D2255424B200EB00056662 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		F9D2255624B200FC00056662 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F9D2256324B340DF00056662 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F9D2256524B353BB00056662 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F9E9F80E24A0ABD9003A5660 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F9E9F81024A0ABE7003A5660 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F9E9F81224A0AC0B003A5660 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 				F951926524ACBF5800ED18C1 /* FireDB.swift */,
 				F951926924ACBFB900ED18C1 /* Credentials.swift */,
 				F951926724ACBF9C00ED18C1 /* ExtensionUiViewController.swift */,
-				F9D2255424B200EB00056662 /* Message.swift */,
-				F9D2255624B200FC00056662 /* Chat.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -143,6 +141,7 @@
 				F951926E24AE495D00ED18C1 /* Question.swift */,
 				F951927024AE49A400ED18C1 /* Choice.swift */,
 				F951927224AF878700ED18C1 /* Answer.swift */,
+				F9D2256324B340DF00056662 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +180,7 @@
 				F951926B24ACC97200ED18C1 /* GoogleService-Info.plist */,
 				F968C5F524920DFD007123DE /* Info.plist */,
 				F94FCEFD24A0CF90008CFAC6 /* toolkit.swift */,
+				F9D2256524B353BB00056662 /* Constants.swift */,
 			);
 			path = projetDev3;
 			sourceTree = "<group>";
@@ -310,13 +310,12 @@
 				F951925E24AB8AD800ED18C1 /* ResultController.swift in Sources */,
 				F9BA10ED249233EA002242DA /* GameController.swift in Sources */,
 				F968C5EC24920DFB007123DE /* ViewController.swift in Sources */,
+				F9D2256624B353BB00056662 /* Constants.swift in Sources */,
 				F94FCF0324A48347008CFAC6 /* GameFinderController.swift in Sources */,
 				F94FCF0D24A48D22008CFAC6 /* LogController.swift in Sources */,
-				F9D2255524B200EB00056662 /* Message.swift in Sources */,
 				F951926F24AE495D00ED18C1 /* Question.swift in Sources */,
 				F951926424ACBEB100ED18C1 /* FireAuth.swift in Sources */,
 				F9E9F81124A0ABE7003A5660 /* ChatViewController.swift in Sources */,
-				F9D2255724B200FC00056662 /* Chat.swift in Sources */,
 				F968C5E824920DFB007123DE /* AppDelegate.swift in Sources */,
 				F9E9F80F24A0ABD9003A5660 /* GameViewController.swift in Sources */,
 				F951926A24ACBFB900ED18C1 /* Credentials.swift in Sources */,
@@ -324,6 +323,7 @@
 				F968C5EA24920DFB007123DE /* SceneDelegate.swift in Sources */,
 				F951926624ACBF5800ED18C1 /* FireDB.swift in Sources */,
 				F9E9F81324A0AC0B003A5660 /* ProfileViewController.swift in Sources */,
+				F9D2256424B340DF00056662 /* Message.swift in Sources */,
 				F94FCEFE24A0CF90008CFAC6 /* toolkit.swift in Sources */,
 				F9BA10EB24923090002242DA /* AccueilController.swift in Sources */,
 				F951927124AE49A400ED18C1 /* Choice.swift in Sources */,

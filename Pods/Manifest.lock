@@ -228,6 +228,9 @@ PODS:
     - FirebaseAnalytics (= 6.6.0)
   - Firebase/CoreOnly (6.26.0):
     - FirebaseCore (= 6.7.2)
+  - Firebase/Database (6.26.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.2.1)
   - Firebase/Firestore (6.26.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.15.0)
@@ -262,6 +265,10 @@ PODS:
     - GoogleUtilities/Logger (~> 6.5)
     - nanopb (~> 1.30905.0)
   - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseDatabase (6.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.22)
   - FirebaseFirestore (1.15.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
@@ -341,6 +348,9 @@ PODS:
   - InputBarAccessoryView (4.3.2):
     - InputBarAccessoryView/Core (= 4.3.2)
   - InputBarAccessoryView/Core (4.3.2)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - leveldb-library (1.22)
   - MessageKit (3.1.0):
     - InputBarAccessoryView (~> 4.3.0)
@@ -357,8 +367,10 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
+  - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
+  - JSQMessagesViewController
   - MessageKit
   - SDWebImage
 
@@ -373,6 +385,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
     - FirebaseFirestore
     - FirebaseInstallations
     - FirebaseStorage
@@ -384,6 +397,8 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - InputBarAccessoryView
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
     - leveldb-library
     - MessageKit
     - nanopb
@@ -400,6 +415,7 @@ SPEC CHECKSUMS:
   FirebaseCore: f42e5e5f382cdcf6b617ed737bf6c871a6947b17
   FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseDatabase: 4e99c0c475d1ee0aa64ae2b53c93f80b7b60d7d9
   FirebaseFirestore: 8c158bdde010fa397386333a74570eaef033e62d
   FirebaseInstallations: 6f5f680e65dc374397a483c32d1799ba822a395b
   FirebaseStorage: f4f39ae834a7145963b913f54e2f24a9db1d8fac
@@ -411,12 +427,14 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
 
-PODFILE CHECKSUM: a8d230067bd034f81f5cfa3b3c9f9991e28d9c46
+PODFILE CHECKSUM: 1cff0adedd7ec600d94d633dbf6f3363999a60ce
 
 COCOAPODS: 1.9.3

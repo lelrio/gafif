@@ -505,7 +505,6 @@
         <!--Log Controller-->
         <scene sceneID="o9A-YX-KM1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zi-47V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Le9-qW-wCf" customClass="LogController" customModule="projetDev3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDV-0g-bfq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -640,6 +639,7 @@
                         <outlet property="viewHidden" destination="5xG-ha-2C2" id="58Y-xY-pVo"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zi-47V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5467" y="-599"/>
         </scene>
@@ -1156,7 +1156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAs-AD-QIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8075" y="120"/>
+            <point key="canvasLocation" x="8073.9130434782619" y="119.86607142857142"/>
         </scene>
         <!--Profile-->
         <scene sceneID="elY-1y-FMK">
