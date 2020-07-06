@@ -7,6 +7,7 @@ import JSQMessagesViewController
 
 class ChatController: JSQMessagesViewController {
     var messages = [JSQMessage]()
+    
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     }()
@@ -48,7 +49,7 @@ class ChatController: JSQMessagesViewController {
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
         
-        let query = Constants.refs.databaseChats.queryLimited(toLast: 10)
+        let query = Constants.refs.databaseChats.queryLimited(toLast: 20)
 
         _ = query.observe(.childAdded, with: { [weak self] snapshot in
 
@@ -75,6 +76,7 @@ class ChatController: JSQMessagesViewController {
     {
         let defaults = UserDefaults.standard
 
+       
         let alert = UIAlertController(title: "Your Display Name", message: "Before you can chat, please choose a display name. Others will see this name when you send chat messages. You can change your display name again by tapping the navigation bar.", preferredStyle: .alert)
 
         alert.addTextField { textField in
@@ -102,8 +104,10 @@ class ChatController: JSQMessagesViewController {
                 defaults.synchronize()
             }
         }))
-
-        present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async{
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData!
     {
