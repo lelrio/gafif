@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="119.86607142857142"/>
+            <point key="canvasLocation" x="304" y="120"/>
         </scene>
         <!--Mario Controller-->
         <scene sceneID="Zwp-hk-hHE">
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuC-Ad-FZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="119.86607142857142"/>
+            <point key="canvasLocation" x="1045" y="120"/>
         </scene>
         <!--Game Finder-->
         <scene sceneID="53n-rh-JQ2">
@@ -178,6 +178,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KV5-Fe-5ee" kind="show" id="NNr-Bc-LP6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JL-wx-grh" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="57" y="338" width="300" height="64"/>
@@ -190,6 +193,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KV5-Fe-5ee" kind="show" id="gHx-Iz-ZJd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCe-fg-bq0" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="57" y="416" width="300" height="64"/>
@@ -202,18 +208,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUb-tH-Sx5" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
-                                <rect key="frame" x="57" y="495" width="300" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KV5-Fe-5ee" kind="show" id="so5-do-JpA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joD-Dp-Odd" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="57" y="574" width="300" height="64"/>
@@ -226,9 +223,13 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeChoice:" destination="kcB-VZ-27H" eventType="touchUpInside" id="Bz4-ML-b6o"/>
+                                    <segue destination="KV5-Fe-5ee" kind="show" id="7IO-bp-WeZ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpi-Mp-Ig1">
-                                <rect key="frame" x="72" y="165" width="270" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quelle plateforme ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpi-Mp-Ig1">
+                                <rect key="frame" x="72" y="165" width="285" height="36"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -237,23 +238,6 @@
                                 <rect key="frame" x="57" y="213" width="300" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay3-8h-KxH" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
-                                <rect key="frame" x="65" y="731" width="285" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <state key="normal" title="Valider">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Le9-qW-wCf" kind="show" id="YOF-L1-kW4"/>
-                                </connections>
-                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-5o-ef4">
                                 <rect key="frame" x="65" y="699" width="285" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -267,65 +251,77 @@
                                 <state key="normal" title="Passer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Xbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-Gh-kLG">
+                                <rect key="frame" x="186" y="280" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ordinateur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzZ-1q-sib">
+                                <rect key="frame" x="186" y="360" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Téléphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdl-XW-nB3">
+                                <rect key="frame" x="186" y="438" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="playstation 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taH-su-QIi">
+                                <rect key="frame" x="186" y="517" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfi-Mf-Fs6">
+                                <rect key="frame" x="186" y="596" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xbox" translatesAutoresizingMaskIntoConstraints="NO" id="IgV-74-U53">
+                                <rect key="frame" x="105" y="267" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="computer" translatesAutoresizingMaskIntoConstraints="NO" id="rsu-SX-asH">
+                                <rect key="frame" x="98" y="346" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mobile" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-cz-ocX">
+                                <rect key="frame" x="98" y="425" width="58" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ps4" translatesAutoresizingMaskIntoConstraints="NO" id="KBV-uq-q9o">
+                                <rect key="frame" x="102" y="495" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="switch" translatesAutoresizingMaskIntoConstraints="NO" id="eUP-KB-tS3">
+                                <rect key="frame" x="105" y="584" width="45" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUb-tH-Sx5" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="495" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="36F-yo-7bU" kind="show" id="ifF-c8-6YQ"/>
+                                    <segue destination="KV5-Fe-5ee" kind="show" id="lVF-SQ-lPw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7i-FQ-xNl">
-                                <rect key="frame" x="144" y="258" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-TT-g0h">
-                                <rect key="frame" x="144" y="338" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot2-wL-suW">
-                                <rect key="frame" x="144" y="414" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aK-Cp-lzy">
-                                <rect key="frame" x="90" y="270" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1H-Wj-fQv">
-                                <rect key="frame" x="90" y="350" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7VO-tt-aHe">
-                                <rect key="frame" x="90" y="426" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NaH-Du-PYl">
-                                <rect key="frame" x="90" y="507" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG8-Q3-mPd">
-                                <rect key="frame" x="144" y="495" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWl-Pl-8GO">
-                                <rect key="frame" x="90" y="586" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-O1-qAV">
-                                <rect key="frame" x="144" y="574" width="180" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -346,22 +342,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="fifthChoiceImage" destination="zWl-Pl-8GO" id="y4A-Ps-3jx"/>
-                        <outlet property="fifthChoiceText" destination="rVZ-O1-qAV" id="Dxc-6l-RCx"/>
-                        <outlet property="firstChoiceImage" destination="1aK-Cp-lzy" id="Nbf-qL-FDC"/>
-                        <outlet property="firstChoiceText" destination="q7i-FQ-xNl" id="Dej-OJ-vfs"/>
-                        <outlet property="fourthChoiceImage" destination="NaH-Du-PYl" id="lTL-0G-aSr"/>
-                        <outlet property="fourthChoiceText" destination="JG8-Q3-mPd" id="ofy-zQ-wUK"/>
                         <outlet property="questionTitle" destination="Wpi-Mp-Ig1" id="0FT-UQ-j75"/>
-                        <outlet property="secondChoiceImage" destination="R1H-Wj-fQv" id="g3X-W2-Tje"/>
-                        <outlet property="secondChoiceText" destination="NWm-TT-g0h" id="WJa-Iz-2Oj"/>
-                        <outlet property="thirdChoiceImage" destination="7VO-tt-aHe" id="J9y-ZK-nbe"/>
-                        <outlet property="thirdChoiceText" destination="ot2-wL-suW" id="mge-bc-g1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ra-14-kka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2744.9275362318845" y="119.86607142857142"/>
+            <point key="canvasLocation" x="1803" y="120"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SUw-bi-AZ6">
@@ -383,50 +369,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-Ut-i66">
-                                <rect key="frame" x="239" y="303" width="56" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dragon Ball Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-Ut-i66">
+                                <rect key="frame" x="225" y="303" width="107" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMo-jU-87G">
-                                <rect key="frame" x="239" y="383" width="57" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="World of warcraft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMo-jU-87G">
+                                <rect key="frame" x="224" y="382" width="136" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-g6-FdV">
-                                <rect key="frame" x="238" y="459" width="58" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Battlerite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-g6-FdV">
+                                <rect key="frame" x="225" y="459" width="72" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yef-KU-Azq">
-                                <rect key="frame" x="118" y="298" width="62" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="yef-KU-Azq">
+                                <rect key="frame" x="118" y="303" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-JA-aWO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image 10" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-JA-aWO">
                                 <rect key="frame" x="118" y="378" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mje-em-D7m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image 11" translatesAutoresizingMaskIntoConstraints="NO" id="mje-em-D7m">
                                 <rect key="frame" x="118" y="454" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ig3-th-yil">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="ig3-th-yil">
                                 <rect key="frame" x="118" y="535" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM1-Wz-9wQ">
-                                <rect key="frame" x="238" y="540" width="58" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpX-LF-E4i" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="225" y="337" width="101" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -500,18 +479,33 @@
                                     <segue destination="Le9-qW-wCf" kind="show" id="bMv-D2-TKW"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="cAm-Uq-OIu">
+                                <rect key="frame" x="65" y="637" width="285" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League of legends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM1-Wz-9wQ">
+                                <rect key="frame" x="224" y="539" width="148" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="eVP-0n-q5w"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H9v-mi-jTN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQI-1u-sTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3621.739130434783" y="119.86607142857142"/>
+            <point key="canvasLocation" x="4709" y="120"/>
         </scene>
         <!--Log Controller-->
         <scene sceneID="o9A-YX-KM1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zi-47V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Le9-qW-wCf" customClass="LogController" customModule="projetDev3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDV-0g-bfq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -594,9 +588,6 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="tick:" destination="Le9-qW-wCf" eventType="editingDidEnd" id="Cqg-ag-4KK"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXI-PX-3c0">
                                 <rect key="frame" x="20" y="423" width="267" height="34"/>
@@ -611,7 +602,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uncheck" translatesAutoresizingMaskIntoConstraints="NO" id="S81-zS-An4" customClass="DesignableImageView" customModule="projetDev3" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:S81-zS-An4:image" translatesAutoresizingMaskIntoConstraints="NO" id="S81-zS-An4" customClass="DesignableImageView" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="365" y="331" width="29" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -620,7 +611,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uncheck" translatesAutoresizingMaskIntoConstraints="NO" id="oTJ-Fr-cU2" customClass="DesignableImageView" customModule="projetDev3" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:S81-zS-An4:image" translatesAutoresizingMaskIntoConstraints="NO" id="oTJ-Fr-cU2" customClass="DesignableImageView" customModule="projetDev3" customModuleProvider="target">
                                 <rect key="frame" x="365" y="423" width="29" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -649,9 +640,8 @@
                         <outlet property="viewHidden" destination="5xG-ha-2C2" id="58Y-xY-pVo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zi-47V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3622" y="-558"/>
+            <point key="canvasLocation" x="5467" y="-599"/>
         </scene>
         <!--jeux-->
         <scene sceneID="b4u-FG-Rqm">
@@ -832,7 +822,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ong-16-ro3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="LWC-Zp-4wd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5440.579710144928" y="-568.52678571428567"/>
+            <point key="canvasLocation" x="6206" y="-598"/>
         </scene>
         <!--Chat-->
         <scene sceneID="dFn-NN-t6A">
@@ -896,7 +886,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnN-TT-vNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5440.579710144928" y="119.86607142857142"/>
+            <point key="canvasLocation" x="6207" y="120"/>
         </scene>
         <!--Saloon Controller-->
         <scene sceneID="Lg0-ti-DUM">
@@ -1138,7 +1128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vh8-GD-ClX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6215.9420289855079" y="119.86607142857142"/>
+            <point key="canvasLocation" x="7070" y="120"/>
         </scene>
         <!--Chat Controller-->
         <scene sceneID="1hi-1s-jkI">
@@ -1166,7 +1156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAs-AD-QIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7011.594202898551" y="119.86607142857142"/>
+            <point key="canvasLocation" x="8075" y="120"/>
         </scene>
         <!--Profile-->
         <scene sceneID="elY-1y-FMK">
@@ -1423,7 +1413,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2e9-dF-6Op" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="xgj-YT-ayB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5440.579710144928" y="852.45535714285711"/>
+            <point key="canvasLocation" x="6207" y="823"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kbt-D8-aOm">
@@ -1453,7 +1443,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVc-cY-zGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4523" y="120"/>
+            <point key="canvasLocation" x="5468" y="120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q5y-D4-3Do">
@@ -1471,17 +1461,435 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGR-J0-HkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+            <point key="canvasLocation" x="-454" y="120"/>
+        </scene>
+        <!--Game Finder-->
+        <scene sceneID="QRm-7j-boe">
+            <objects>
+                <viewController id="KV5-Fe-5ee" customClass="GameFinderController" customModule="projetDev3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w5Z-8X-3b6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-R1-ZXd" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="258" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="PKf-f7-2zM" kind="show" id="0rH-h5-i1m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYp-qW-RaC" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="338" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="PKf-f7-2zM" kind="show" id="XVo-Y0-ubW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-sy-sYZ">
+                                <rect key="frame" x="57" y="213" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="PnZ-L5-BhQ">
+                                <rect key="frame" x="65" y="699" width="285" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhT-qY-5o2">
+                                <rect key="frame" x="297" y="789" width="53" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <state key="normal" title="Passer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ancien" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg6-vC-b0v">
+                                <rect key="frame" x="186" y="280" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nouveau" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR4-sB-UKk">
+                                <rect key="frame" x="186" y="360" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameboy" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-lj-alS">
+                                <rect key="frame" x="111" y="262" width="59" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jeu récent ou ancien ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-1l-Cpb">
+                                <rect key="frame" x="46" y="169" width="322" height="36"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manette" translatesAutoresizingMaskIntoConstraints="NO" id="NvD-eE-h9l">
+                                <rect key="frame" x="97" y="343" width="87" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="hul-VJ-zfH" firstAttribute="trailing" secondItem="2EG-1l-Cpb" secondAttribute="trailing" constant="72" id="AuD-kv-Buy"/>
+                            <constraint firstItem="2EG-1l-Cpb" firstAttribute="top" secondItem="hul-VJ-zfH" secondAttribute="top" constant="77" id="NcG-oY-Ugd"/>
+                            <constraint firstItem="2EG-1l-Cpb" firstAttribute="leading" secondItem="hul-VJ-zfH" secondAttribute="leading" constant="72" id="RUN-0I-1gE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ie9-sy-sYZ" secondAttribute="trailing" constant="37" id="Teh-H3-F9P"/>
+                            <constraint firstItem="ie9-sy-sYZ" firstAttribute="top" secondItem="2EG-1l-Cpb" secondAttribute="bottom" constant="12.5" id="fgt-8c-5nQ"/>
+                            <constraint firstItem="ie9-sy-sYZ" firstAttribute="leading" secondItem="w5Z-8X-3b6" secondAttribute="leadingMargin" constant="37" id="h1H-pM-pRo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hul-VJ-zfH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Finder" id="qCK-Yv-Z97" colorLabel="IBBuiltInLabel-Red">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backButton" id="yqX-rE-MMN">
+                            <connections>
+                                <action selector="backButton:" destination="KV5-Fe-5ee" id="tR6-xY-5Yn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionTitle" destination="2EG-1l-Cpb" id="uqQ-hW-91C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbA-th-ggA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2599" y="120"/>
+        </scene>
+        <!--Game Finder-->
+        <scene sceneID="oGW-El-NBe">
+            <objects>
+                <viewController id="PKf-f7-2zM" customClass="GameFinderController" customModule="projetDev3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXK-xs-vwi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN9-DJ-C4N" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="258" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="F2R-Bq-0bg" kind="show" id="A3c-TE-B4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-Ry-fcP" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="338" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="F2R-Bq-0bg" kind="show" id="6Pd-Kb-ped"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBI-4B-iCb" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="416" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="F2R-Bq-0bg" kind="show" id="8zp-9r-2sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-a6-0Md" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="495" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="F2R-Bq-0bg" kind="show" id="D7V-zM-KVC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fF-ey-d5G" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="574" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeChoice:" destination="PKf-f7-2zM" eventType="touchUpInside" id="9Ho-14-2Xc"/>
+                                    <segue destination="F2R-Bq-0bg" kind="show" id="Wk1-8w-2Q4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Que voulez vous expérimentez ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-5R-oaV">
+                                <rect key="frame" x="72" y="103" width="270" height="70.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scj-Kk-FG6">
+                                <rect key="frame" x="57" y="213" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-u1-Uvb">
+                                <rect key="frame" x="65" y="699" width="285" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-3N-XcV">
+                                <rect key="frame" x="297" y="789" width="53" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <state key="normal" title="Passer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEi-ES-GrC">
+                                <rect key="frame" x="186" y="280" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aventure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-iu-Tyz">
+                                <rect key="frame" x="186" y="360" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stratégie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHb-m1-KX5">
+                                <rect key="frame" x="186" y="438" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC2-71-yb9">
+                                <rect key="frame" x="186" y="517" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Simulation de vie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8R-Qx-ByF">
+                                <rect key="frame" x="186" y="596" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="action" translatesAutoresizingMaskIntoConstraints="NO" id="r2E-jO-CCR">
+                                <rect key="frame" x="105" y="267" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aventure" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-cM-U67">
+                                <rect key="frame" x="98" y="346" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strategy" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-Hy-ZEr">
+                                <rect key="frame" x="98" y="425" width="58" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simulation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdm-WE-8Mu">
+                                <rect key="frame" x="105" y="584" width="45" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sport" translatesAutoresizingMaskIntoConstraints="NO" id="kTz-rx-YQa">
+                                <rect key="frame" x="102" y="502" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="EyV-5R-oaV" firstAttribute="top" secondItem="Sr6-bb-5gH" secondAttribute="top" constant="77" id="6am-SC-EN6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="scj-Kk-FG6" secondAttribute="trailing" constant="37" id="UOU-3u-iD4"/>
+                            <constraint firstItem="scj-Kk-FG6" firstAttribute="leading" secondItem="WXK-xs-vwi" secondAttribute="leadingMargin" constant="37" id="cOt-gx-s2x"/>
+                            <constraint firstItem="EyV-5R-oaV" firstAttribute="leading" secondItem="Sr6-bb-5gH" secondAttribute="leading" constant="72" id="iDh-Q1-H11"/>
+                            <constraint firstItem="Sr6-bb-5gH" firstAttribute="trailing" secondItem="EyV-5R-oaV" secondAttribute="trailing" constant="72" id="mhJ-v9-AsG"/>
+                            <constraint firstItem="scj-Kk-FG6" firstAttribute="top" secondItem="EyV-5R-oaV" secondAttribute="bottom" constant="12.5" id="tiU-oY-WsC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sr6-bb-5gH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Finder" id="Ajr-yd-DlV" colorLabel="IBBuiltInLabel-Red">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backButton" id="RGa-k2-eKI">
+                            <connections>
+                                <action selector="backButton:" destination="PKf-f7-2zM" id="Vjb-JW-9yw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionTitle" destination="EyV-5R-oaV" id="rpU-ak-oZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N27-Q8-CKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3349" y="120"/>
+        </scene>
+        <!--Game Finder-->
+        <scene sceneID="a6V-dz-UWP">
+            <objects>
+                <viewController id="F2R-Bq-0bg" customClass="GameFinderController" customModule="projetDev3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3d-Rv-S0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-KN-8BJ" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="258" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vKa-WT-MUE" kind="show" id="vpm-FS-l3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsL-PU-rBR" customClass="DesignableButton" customModule="projetDev3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="338" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vKa-WT-MUE" kind="show" id="XUA-Zg-1ub"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arb-Rr-dwv">
+                                <rect key="frame" x="57" y="213" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-s9-wvu">
+                                <rect key="frame" x="65" y="699" width="285" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45y-n6-eGO">
+                                <rect key="frame" x="297" y="789" width="53" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <state key="normal" title="Passer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-I7-Uac">
+                                <rect key="frame" x="186" y="280" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Multijoueur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPQ-Mg-MJ5">
+                                <rect key="frame" x="186" y="360" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solo" translatesAutoresizingMaskIntoConstraints="NO" id="vZ2-mm-HZ6">
+                                <rect key="frame" x="105" y="267" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="multiplayer" translatesAutoresizingMaskIntoConstraints="NO" id="6Dj-JP-YiQ">
+                                <rect key="frame" x="98" y="346" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jeu solo ou multijoueur ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2N-Og-rZx">
+                                <rect key="frame" x="46" y="129" width="322" height="76"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="cvy-pd-C59" firstAttribute="trailing" secondItem="Z2N-Og-rZx" secondAttribute="trailing" constant="72" id="2yc-nR-v8m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="arb-Rr-dwv" secondAttribute="trailing" constant="37" id="KoV-bj-oHP"/>
+                            <constraint firstItem="arb-Rr-dwv" firstAttribute="leading" secondItem="J3d-Rv-S0h" secondAttribute="leadingMargin" constant="37" id="Qvl-Jf-agQ"/>
+                            <constraint firstItem="Z2N-Og-rZx" firstAttribute="leading" secondItem="cvy-pd-C59" secondAttribute="leading" constant="72" id="WSw-WZ-HmA"/>
+                            <constraint firstItem="arb-Rr-dwv" firstAttribute="top" secondItem="Z2N-Og-rZx" secondAttribute="bottom" constant="12.5" id="bXb-qC-Wc1"/>
+                            <constraint firstItem="Z2N-Og-rZx" firstAttribute="top" secondItem="cvy-pd-C59" secondAttribute="top" constant="77" id="k7e-uL-3af"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cvy-pd-C59"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Finder" id="bf1-6H-3sm" colorLabel="IBBuiltInLabel-Red">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backButton" id="ENW-lZ-lpA">
+                            <connections>
+                                <action selector="backButton:" destination="F2R-Bq-0bg" id="NhS-q6-RbG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionTitle" destination="Z2N-Og-rZx" id="bIk-mX-59X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsY-yc-D8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4040.579710144928" y="119.86607142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YEb-ku-ueG"/>
+        <segue reference="A3c-TE-B4t"/>
+        <segue reference="0rH-h5-i1m"/>
+        <segue reference="NNr-Bc-LP6"/>
         <segue reference="mM2-5l-F0R"/>
-        <segue reference="YOF-L1-kW4"/>
+        <segue reference="XUA-Zg-1ub"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1home" width="675" height="900"/>
         <image name="2accueil" width="1050" height="700"/>
+        <image name="Group" width="92" height="26"/>
+        <image name="Vector" width="71" height="78"/>
+        <image name="action" width="653" height="608"/>
+        <image name="aventure" width="563" height="611"/>
         <image name="backButton" width="28" height="28"/>
         <image name="cb" width="24" height="16"/>
         <image name="chat" width="24" height="20"/>
@@ -1489,14 +1897,827 @@
         <image name="favorit" width="25" height="22"/>
         <image name="fortnite" width="299" height="168"/>
         <image name="gameFeature" width="414" height="195"/>
+        <image name="gameboy" width="700" height="700"/>
         <image name="gaming" width="21" height="15"/>
+        <image name="image 10" width="78" height="78"/>
+        <image name="image 11" width="69" height="79"/>
         <image name="image 9" width="414" height="664"/>
+        <image name="imageView:S81-zS-An4:image" width="24" height="24">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
+S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBcLDBkaIRQmKisyNTo9PkNGR0pUXF1hZFUkbnVsbNYNDg8Q
+ERITFBUWFxhWTlNTaXplXk5TUmVzaXppbmdNb2RlViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05T
+Q29sb3KAAhAAgBYSIMAAAIADgBFYezI0LCAyNH3SGw8cIFpOUy5vYmplY3Rzox0eH4AEgAqADYAQ0hsP
+IiWiIySABYAGgAnSJw8oKV8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8RFiZNTQAqAAAJCAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHh4ednZ2drm5ubnk5OTk+fn5+fn5+fnk5OTkubm5uXZ2dnYe
+Hh4eAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhoaGpmZmZn7
++/v7///////////////////////////////////////////7+/v7mZmZmRoaGhoAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRUVFR8/Pz8///////////////////////////////////////
+//////////////////////////Pz8/NRUVFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJycnL+
+/v7+///////////////////////////////////////////////////////////////////////////+
+/v7+cnJycgAAAAAAAAAAAAAAAAAAAAAAAAAAUVFRUf7+/v7/////////////////////////////////
+/////////////////////////////////////////////////////v7+/lFRUVEAAAAAAAAAAAAAAAAa
+Ghoa8/Pz8///////////////////////////////////////////////////////////////////////
+//////////////////////////Pz8/MaGhoaAAAAAAAAAACampqa////////////////////////////
+//////////////////////////////////////////////////////////////////////////////+Z
+mZmZAAAAAB4eHh78/Pz8////////////////////////////////////////////////////////////
+///////////////6+vr6lpaWlqKioqL+/v7+///////////7+/v7Hh4eHnZ2dnb/////////////////
+//////////////////////////////////////////////////////////n5+flMTExMAAAAAAAAAACm
+pqam////////////////dnZ2drm5ubn/////////////////////////////////////////////////
+////////////////////+fn5+UtLS0sAAAAAAAAAAAAAAACenp6e////////////////ubm5ueXl5eX/
+///////////////+/v7+oKCgoJiYmJj7+/v7///////////////////////////4+Pj4SkpKSgAAAAAA
+AAAAAAAAAFZWVlb8/Pz8////////////////5OTk5Pn5+fn///////////////+goKCgAAAAAAAAAABR
+UVFR+vr6+v////////////////j4+PhKSkpKAAAAAAAAAAAAAAAAVlZWVvv7+/v/////////////////
+////+fn5+fn5+fn///////////////+YmJiYAAAAAAAAAAAAAAAAUVFRUfr6+vr/////+Pj4+ElJSUkA
+AAAAAAAAAAAAAABWVlZW+/v7+///////////////////////////+fn5+eTk5OT////////////////7
++/v7UVFRUQAAAAAAAAAAAAAAAFFRUVHy8vLySEhISAAAAAAAAAAAAAAAAFZWVlb7+/v7////////////
+////////////////////5OTk5Lm5ubn/////////////////////+vr6+lFRUVEAAAAAAAAAAAAAAAAT
+ExMTAAAAAAAAAAAAAAAAVlZWVvv7+/v/////////////////////////////////////ubm5uXZ2dnb/
+//////////////////////////r6+vpRUVFRAAAAAAAAAAAAAAAAAAAAAAAAAABWVlZW+/v7+///////
+////////////////////////////////////dnZ2dh4eHh77+/v7///////////////////////////6
++vr6UVFRUQAAAAAAAAAAAAAAAFZWVlb7+/v7///////////////////////////////////////////7
++/v7Hh4eHgAAAACampqa////////////////////////////////+vr6+l9fX18KCgoKY2NjY/v7+/v/
+//////////////////////////////////////////////+ZmZmZAAAAAAAAAAAaGhoa8/Pz8///////
+////////////////////////////////////////////////////////////////////////////////
+//////////Pz8/MaGhoaAAAAAAAAAAAAAAAAUVFRUf7+/v7/////////////////////////////////
+/////////////////////////////////////////////////////v7+/lFRUVEAAAAAAAAAAAAAAAAA
+AAAAAAAAAHJycnL+/v7+////////////////////////////////////////////////////////////
+///////////////+/v7+cnJycgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRUVFR8/Pz8///////
+//////////////////////////////////////////////////////////Pz8/NRUVFRAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhoaGpqampr7+/v7////////////////////////////
+///////////////7+/v7mpqamhoaGhoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAeHh4ednZ2drm5ubnk5OTk+fn5+fn5+fnk5OTkubm5uXZ2dnYeHh4eAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAwAAAAEAGAAAAQEAAwAAAAEAGAAAAQIAAwAAAAQAAAnOAQMA
+AwAAAAEAAQAAAQYAAwAAAAEAAgAAAQoAAwAAAAEAAQAAAREABAAAAAEAAAAIARIAAwAAAAEAAQAAARUA
+AwAAAAEABAAAARYAAwAAAAEAGAAAARcABAAAAAEAAAkAARwAAwAAAAEAAQAAASgAAwAAAAEAAgAAAVIA
+AwAAAAEAAQAAAVMAAwAAAAQAAAnWh3MABwAADEgAAAneAAAAAAAIAAgACAAIAAEAAQABAAEAAAxITGlu
+bwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAA
+AAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAAC
+GAAAABRnWFlaAAACLAAAABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAAAIh2dWVkAAAD
+TAAAAIZ2aWV3AAAD1AAAACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAAAAxyVFJDAAAE
+PAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykgMTk5OCBIZXds
+ZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAA
+ABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABv
+ogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z2Rlc2MAAAAAAAAA
+FklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAAC5JRUMgNjE5
+NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5JRUMgNjE5NjYt
+Mi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVz
+YwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAA
+AAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZWiAAAAAAAEwJ
+VgBQAAAAVx/nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAAAABDUlQgY3Vy
+dgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcA
+fACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMB
+GQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB
+8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsD
+FgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4E
+jASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgG
+WQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4I
+ggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvML
+CwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N
++A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETER
+TxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAV
+EhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZ
+RRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd
+7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0j
+CiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEo
+oijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIu
+ty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1
+TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8
+ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BE
+A0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JM
+KkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U
+21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114Xcle
+Gl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn
+6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfBy
+S3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9
+QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmI
+zokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU
+9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUeh
+tqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGv
+Fq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9
+Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbL
+tsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba
++9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq
+5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7
+d/wH/Jj9Kf26/kv+3P9t///SLC0uL1okY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJl
+cKMuMDFaTlNJbWFnZVJlcFhOU09iamVjdNIsLTM0V05TQXJyYXmiMzHSGw82JaIjOIAFgAuACdInDzsp
+gAyACE8RMU5NTQAqAAAkCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAADAwMDGxsbGykpKSlra2trf39/f7CwsLC+vr6+39/f3+fn5+f29vb2+fn5+fn5+fn29vb2
+5+fn59/f39++vr6+sLCwsH9/f39ra2trKSkpKRsbGxsDAwMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAADAwMDBQUFBREREREYGBgYNTU1NUNDQ0N+fn5+j4+Pj7m5ubnFxcXF4+Pj4+rq6ur29vb2
++fn5+fn5+fn29vb26urq6uPj4+PFxcXFubm5uY+Pj49+fn5+Q0NDQzU1NTUYGBgYEREREQUFBQUDAwMD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAICAgIVFRUVJSUlJXh4eHiRkZGR1NTU1OHh4eHs7Ozs7+/v7/b29vb4+Pj4
++/v7+/z8/Pz//////////////////////Pz8/Pv7+/v4+Pj49vb29u/v7+/s7Ozs4eHh4dTU1NSRkZGR
+eHh4eCUlJSUVFRUVAgICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBCQkJCQ8PDw8wMDAwQ0NDQ5eXl5ewsLCw8PDw8Pv7+/v/////
+////////////////////////////////////////////////////////////////////////////////
++/v7+/Dw8PCwsLCwl5eXl0NDQ0MwMDAwDw8PDwkJCQkBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAgIPz8/P1paWlrFxcXF29vb2/Dw8PD09PT0
+/v7+/v//////////////////////////////////////////////////////////////////////////
+//////////////////////7+/v709PT08PDw8Nvb29vFxcXFWlpaWj8/Pz8ICAgIAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQ0NDQ0ZGRkZW1tbW3h4eHji4uLi
+9fX19f7+/v7/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////v7+/vX19fXi4uLieHh4eFtbW1sZGRkZ
+DQ0NDQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMDFhYWFh1dXV1
+2NjY2Ovr6+v8/Pz8/v7+/v//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////7+/v78/Pz8
+6+vr69jY2Nh1dXV1WFhYWAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEJCQkJ
+GRkZGXR0dHSSkpKS7+/v7/7+/v7/////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////v7+/u/v7++SkpKSdHR0dBkZGRkJCQkJAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAgICAg/Pz8/XFxcXNjY2Njv7+/v/f39/f//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////39/f3v7+/v2NjY2FxcXFw/Pz8/CAgICAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAwMDAw8PDw9ZWVlZeHh4eOvr6+v+/v7+////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////+/v7+6+vr63h4eHhZWVlZ
+Dw8PDwMDAwMAAAAAAAAAAAAAAAACAgICFRUVFTAwMDDGxsbG4+Pj4/v7+/v/////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
++/v7++Pj4+PGxsbGMDAwMBUVFRUCAgICAAAAAAAAAAAFBQUFJSUlJUNDQ0Pb29vb9fX19f7+/v7/////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////v7+/vX19fXb29vbQ0NDQyUlJSUFBQUFAAAAAAAAAAAREREReXl5eZiYmJjw8PDw
+/v7+/v//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////7+/v7w8PDwl5eXl3h4eHgRERERAAAAAAMDAwMXFxcX
+kpKSkrGxsbH09PT0////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////7+/v7z8/Pz8vLy8vT09PT19fX1/v7+/v/////////////////////09PT0sLCwsJGRkZEXFxcX
+AwMDAxsbGxs2NjY21dXV1fHx8fH+/v7+////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////+vr6+u/v7++urq6upKSkpKysrKy3t7e39PT09P7+/v7////////////////9/f39
+8fHx8dXV1dU1NTU1GxsbGykpKSlDQ0ND4uLi4vz8/Pz/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////8/Pz85+fn59jY2NiQkJCQhYWFhY2NjY2bm5ub5ubm5vT09PT+/v7+
+////////////////+/v7++Hh4eFDQ0NDKSkpKWtra2t9fX197e3t7f//////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////n5+fnm5ubmdXV1dVhYWFgcHBwcEhISEhQUFBQoKCgo
+nZ2dnbq6urr29vb2/////////////////////+3t7e19fX19a2tra39/f3+Pj4+P7+/v7///////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////Pz8/Obm5ubPz8/PV1dXVzs7OzsICAgI
+AAAAAAAAAAAUFBQUkZGRkbCwsLD09PT0/////////////////////+/v7++Pj4+Pf39/f7CwsLC5ubm5
+9vb29v//////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////5+fn55ubm5nR0dHRWVlZW
+FBQUFAgICAgBAQEBAAAAAAAAAAATExMTjIyMjKurq6vz8/Pz//////////////////////b29va5ubm5
+sLCwsL6+vr7GxsbG9/f39/////////////////////////////////7+/v719fX19PT09PPz8/P09PT0
+/v7+/v////////////////////////////////////////////////////////////////z8/Pzm5ubm
+z8/Pz1ZWVlY6Ojo6CAgICAAAAAAAAAAAAQEBAQkJCQkeHh4elpaWlrS0tLT19fX1////////////////
+//////f39/fGxsbGvr6+vuDg4ODj4+Pj/Pz8/P///////////////////////////v7+/vT09PS1tbW1
+qqqqqqWlpaWvr6+v8PDw8Pv7+/v/////////////////////////////////////////////////////
++Pj4+OXl5eVzc3NzVVVVVRQUFBQICAgIAQEBAQAAAAAAAAAACQkJCUNDQ0NhYWFh29vb2/Hx8fH+/v7+
+//////////////////////v7+/vj4+Pj39/f3+jo6Ojq6urq/f39/f/////////////////////+/v7+
+9PT09Obm5uaZmZmZi4uLi4aGhoaRkZGR2tra2unp6en8/Pz8////////////////////////////////
+///////////8/Pz85eXl5c7Ozs5VVVVVOTk5OQgICAgAAAAAAAAAAAEBAQEJCQkJFhYWFl9fX199fX19
+6urq6vz8/Pz///////////////////////////z8/Pzq6urq5+fn5/b29vb39/f3/v7+/v//////////
+///////////19fX1tbW1tZiYmJgnJycnFBQUFBMTExMdHR0dXFxcXHl5eXnn5+fn+vr6+v//////////
+//////////////////////j4+Pjl5eXlc3Nzc1VVVVUUFBQUCAgICAEBAQEAAAAAAAAAAAkJCQlDQ0ND
+X19fX9PT09Pp6enp/Pz8/P////////////////////////////////7+/v739/f39vb29vn5+fn5+fn5
+///////////////////////////z8/Pzq6urq4yMjIwTExMTAAAAAAAAAAAICAgIPz8/P1tbW1vR0dHR
+6Ojo6Pz8/Pz//////////////////////Pz8/OXl5eXOzs7OVVVVVTk5OTkICAgIAAAAAAAAAAABAQEB
+CQkJCRYWFhZfX19ffX19fenp6en7+/v7///////////////////////////////////////////5+fn5
++fn5+fn5+fn5+fn5///////////////////////////z8/PzpaWlpYaGhoYTExMTAAAAAAAAAAABAQEB
+CQkJCRUVFRVbW1tbeXl5eefn5+f6+vr6///////////4+Pj45OTk5HNzc3NVVVVVExMTEwgICAgBAQEB
+AAAAAAAAAAAJCQkJQ0NDQ19fX1/T09PT6enp6fz8/Pz/////////////////////////////////////
+///////////5+fn5+fn5+fb29vb39/f3/v7+/v/////////////////////09PT0r6+vr5GRkZEdHR0d
+CQkJCQEBAQEAAAAAAAAAAAgICAg/Pz8/W1tbW9HR0dHo6Ojo+/v7+/v7+/vl5eXlzs7OzlRUVFQ4ODg4
+CAgICAAAAAAAAAAAAQEBAQkJCQkWFhYWX19fX319fX3p6enp+/v7+///////////////////////////
+//////////////////////7+/v739/f39vb29ufn5+fq6urq/Pz8/P/////////////////////9/f39
+8fHx8dra2tpcXFxcPz8/PwgICAgAAAAAAAAAAAEBAQEJCQkJFRUVFVtbW1t4eHh44eHh4eDg4OBxcXFx
+VFRUVBMTExMICAgIAQEBAQAAAAAAAAAACQkJCUNDQ0NfX19f09PT0+np6en8/Pz8////////////////
+//////////////////////////////////////z8/Pzq6urq5+fn59/f39/j4+Pj+/v7+///////////
+////////////////+/v7++jo6Oh5eXl5W1tbWxUVFRUJCQkJAQEBAQAAAAAAAAAACAgICD8/Pz9ZWVlZ
+xMTExMPDw8NSUlJSODg4OAcHBwcAAAAAAAAAAAEBAQEJCQkJFhYWFl9fX199fX196enp6fv7+/v/////
+//////////////////////////////////////////////////////v7+/vj4+Pj39/f376+vr7GxsbG
+9/f39/////////////////////////////////z8/Pzo6Ojo0dHR0VtbW1s/Pz8/CAgICAAAAAAAAAAA
+AQEBAQkJCQkODg4OKysrKysrKysNDQ0NCAgICAEBAQEAAAAAAAAAAAkJCQlDQ0NDX19fX9PT09Pp6enp
+/Pz8/P////////////////////////////////////////////////////////////////f39/fGxsbG
+vr6+vrCwsLC5ubm59vb29v/////////////////////////////////////6+vr65+fn53l5eXlbW1tb
+FRUVFQkJCQkBAQEBAAAAAAAAAAACAgICDw8PDw8PDw8CAgICAAAAAAAAAAABAQEBCQkJCRYWFhZfX19f
+fX19fenp6en7+/v7////////////////////////////////////////////////////////////////
+//////b29va5ubm5sLCwsH9/f3+Pj4+P7+/v7///////////////////////////////////////////
+/Pz8/Ojo6OjR0dHRW1tbWz8/Pz8ICAgIAAAAAAAAAAAAAAAAAgICAgICAgIAAAAAAAAAAAAAAAAJCQkJ
+Q0NDQ19fX1/T09PT6enp6fz8/Pz/////////////////////////////////////////////////////
+/////////////////////+/v7++Pj4+Pf39/f2tra2t9fX197e3t7f//////////////////////////
+//////////////////////r6+vrn5+fneXl5eVtbW1sVFRUVCQkJCQEBAQEAAAAAAAAAAAAAAAAAAAAA
+AQEBAQkJCQkWFhYWX19fX319fX3p6enp+/v7+///////////////////////////////////////////
+/////////////////////////////////////+3t7e19fX19a2traykpKSlDQ0ND4eHh4fv7+/v/////
+///////////////////////////////////////////8/Pz86Ojo6NHR0dFbW1tbPz8/PwgICAgAAAAA
+AAAAAAAAAAAAAAAACQkJCUNDQ0NfX19f09PT0+np6en8/Pz8////////////////////////////////
+////////////////////////////////////////////////+/v7++Hh4eFDQ0NDKSkpKRsbGxs1NTU1
+1dXV1fHx8fH9/f39////////////////////////////////////////////////+vr6+ufn5+d5eXl5
+W1tbWxYWFhYKCgoKAgICAgICAgILCwsLGBgYGF9fX199fX196enp6fv7+/v/////////////////////
+///////////////////////////////////////////////////////////9/f398fHx8dXV1dU1NTU1
+GxsbGwMDAwMXFxcXkpKSkrGxsbH09PT0////////////////////////////////////////////////
+//////z8/Pzo6Ojo09PT02ZmZmZLS0tLEhISEhISEhJOTk5OaWlpadTU1NTp6enp/Pz8/P//////////
+///////////////////////////////////////////////////////////////////////////09PT0
+sLCwsJGRkZEXFxcXAwMDAwAAAAAREREReXl5eZiYmJjw8PDw/v7+/v//////////////////////////
+///////////////////////////6+vr66enp6YSEhIRqampqMTExMTExMTFtbW1th4eHh+rq6ur7+/v7
+////////////////////////////////////////////////////////////////////////////////
+//////7+/v7w8PDwl5eXl3h4eHgRERERAAAAAAAAAAAFBQUFJSUlJUNDQ0Pb29vb9fX19f7+/v7/////
+/////////////////////////////////////////////////f39/e3t7e3q6urq4uLi4uLi4uLr6+vr
+7u7u7v39/f3/////////////////////////////////////////////////////////////////////
+/////////////////v7+/vX19fXb29vbQ0NDQyUlJSUFBQUFAAAAAAAAAAACAgICFRUVFTAwMDDGxsbG
+4+Pj4/v7+/v/////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////+/v7++Pj4+PGxsbGMDAwMBUVFRUCAgICAAAAAAAAAAAAAAAA
+AwMDAw8PDw9ZWVlZeHh4eOvr6+v+/v7+////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////+/v7+6+vr63h4eHhZWVlZDw8PDwMDAwMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAgICAg/Pz8/XFxcXNjY2Njv7+/v/f39/f//////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////39/f3v7+/v2NjY2FxcXFw/Pz8/
+CAgICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEJCQkJGRkZGXR0dHSSkpKS7+/v7/7+/v7/////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////v7+/u/v7++SkpKS
+dHR0dBkZGRkJCQkJAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMDFhYWFh1dXV1
+2NjY2Ovr6+v8/Pz8/v7+/v//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////7+/v78/Pz8
+6+vr69jY2Nh1dXV1WFhYWAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AQEBAQ0NDQ0ZGRkZW1tbW3h4eHji4uLi9fX19f7+/v7/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/v7+/vX19fXi4uLieHh4eFtbW1sZGRkZDQ0NDQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAICAgIPz8/P1paWlrFxcXF29vb2/Dw8PD09PT0/v7+/v//////////
+////////////////////////////////////////////////////////////////////////////////
+//////7+/v709PT08PDw8Nvb29vFxcXFWlpaWj8/Pz8ICAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBCQkJCQ8PDw8wMDAwQ0NDQ5iYmJixsbGx
+8PDw8Pv7+/v/////////////////////////////////////////////////////////////////////
+////////////////+/v7+/Dw8PCxsbGxmJiYmENDQ0MwMDAwDw8PDwkJCQkBAQEBAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAgIVFRUV
+JSUlJXl5eXmSkpKS1NTU1OHh4eHs7Ozs7+/v7/b29vb4+Pj4+/v7+/z8/Pz/////////////////////
+/Pz8/Pv7+/v4+Pj49vb29u/v7+/s7Ozs4eHh4dTU1NSSkpKSeXl5eSUlJSUVFRUVAgICAgAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAADAwMDBQUFBREREREYGBgYNTU1NUNDQ0N+fn5+j4+Pj7m5ubnFxcXF4+Pj4+rq6ur29vb2
++fn5+fn5+fn29vb26urq6uPj4+PFxcXFubm5uY+Pj49+fn5+Q0NDQzU1NTUYGBgYEREREQUFBQUDAwMD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMDGxsbGykpKSlra2trf39/f7CwsLC+vr6+
+39/f3+fn5+f29vb2+fn5+fn5+fn29vb25+fn59/f39++vr6+sLCwsH9/f39ra2trKSkpKRsbGxsDAwMD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAQAAAwAA
+AAEAMAAAAQEAAwAAAAEAMAAAAQIAAwAAAAQAACT2AQMAAwAAAAEAAQAAAQYAAwAAAAEAAgAAAQoAAwAA
+AAEAAQAAAREABAAAAAEAAAAIARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAMAAAARcABAAA
+AAEAACQAARoABQAAAAEAACTmARsABQAAAAEAACTuARwAAwAAAAEAAQAAASgAAwAAAAEAAgAAAVIAAwAA
+AAEAAQAAAVMAAwAAAAQAACT+h3MABwAADEgAACUGAAAAAAAAAJAAAAABAAAAkAAAAAEACAAIAAgACAAB
+AAEAAQABAAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNS
+R0IAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAA
+AgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAA
+AsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAABAwAAAAkdGVjaAAA
+BDAAAAAMclRSQwAABDwAAAgMZ1RSQwAABDwAAAgMYlRSQwAABDwAAAgMdGV4dAAAAABDb3B5cmlnaHQg
+KGMpIDE5OTggSGV3bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRlc2MAAAAAAAAAEnNSR0IgSUVDNjE5NjYt
+Mi4xAAAAAAAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAADzUQABAAAAARbMWFlaIAAAAAAAAAAAAAAAAAAA
+AABYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAA
+ts9kZXNjAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAABZJRUMgaHR0cDovL3d3
+dy5pZWMuY2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAA
+AAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAA
+AAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAGRlc2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2
+Ni0yLjEAAAAAAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4x
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB2aWV3AAAAAAATpP4AFF8uABDPFAAD7cwABBMLAANcngAA
+AAFYWVogAAAAAABMCVYAUAAAAFcf521lYXMAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAKPAAAAAnNp
+ZyAAAAAAQ1JUIGN1cnYAAAAAAAAEAAAAAAUACgAPABQAGQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZ
+AF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDw
+APYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5
+AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLL
+AtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQt
+BDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF1QXl
+BfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4
+CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsKEQonCj0KVApq
+CoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1A
+DVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+
+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQn
+FEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW1hb6Fx0XQRdlF4kXrhfSF/cYGxhA
+GGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQbOxtjG4obshvaHAIcKhxSHHscoxzM
+HPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHO
+IfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTglaCWXJccl9yYnJlcmhya3JugnGCdJ
+J3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIrNitpK50r0SwFLDksbiyiLNctDC1B
+LXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4
+M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqy
+Ou87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8hP2E/oj/iQCNAZECmQOdBKUFqQaxB7kIw
+QnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3
+Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLH
+UxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvl
+XDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWS
+ZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/R
+cCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6Rnql
+ewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2EgITjhUeFq4YO
+hnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQbpDWkT+RqJIR
+knqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wcnImc951kndKeQJ6u
+nx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKoxKk3qamqHKqPqwKrdavp
+rFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WKtgG2ebbwt2i34LhZuNG5SrnC
+uju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvDWMPUxFHEzsVLxcjGRsbDx0HHv8g9
+yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc
+1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf
+56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK
++Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//0hsPPyWiI0GABYAOgAnSJw9EKYAPgAhPEV5OTU0A
+KgAAUQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBwcXFxcXHh4eHjQ0NDRgYGBgdnZ2doeHh4eoqKioubm5
+ucTExMTZ2dnZ5OTk5Onp6en09PT0+fn5+fn5+fn5+fn5+fn5+fT09PTp6enp5OTk5NnZ2dnExMTEubm5
+uaioqKiHh4eHdnZ2dmBgYGA0NDQ0Hh4eHhcXFxcHBwcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAcHBwcXFxcXHh4eHjQ0NDRgYGBgdnZ2doeHh4eoqKioubm5ucTExMTZ2dnZ5OTk
+5Onp6en09PT0+fn5+fn5+fn5+fn5+fn5+fT09PTp6enp5OTk5NnZ2dnExMTEubm5uaioqKiHh4eHdnZ2
+dmBgYGA0NDQ0Hh4eHhcXFxcHBwcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEFBQUFBgYGBg4ODg4eHh4eJiYm
+JjIyMjJJSUlJVVVVVWZmZmaHh4eHmJiYmKSkpKS+vr6+ysrKytLS0tLi4uLi6urq6u7u7u729vb2+vr6
++vr6+vr6+vr6+vr6+vb29vbu7u7u6urq6uLi4uLS0tLSysrKyr6+vr6kpKSkmJiYmIeHh4dmZmZmVVVV
+VUlJSUkyMjIyJiYmJh4eHh4ODg4OBgYGBgUFBQUBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFCsrKytcXFxcc3Nzc4iIiIivr6+vxMTE
+xMrKysrX19fX3d3d3eHh4eHq6urq7u7u7vHx8fH29vb2+fn5+fr6+vr9/f39/v7+/v7+/v7+/v7+/v7+
+/v39/f36+vr6+fn5+fb29vbx8fHx7u7u7urq6urh4eHh3d3d3dfX19fKysrKxMTExK+vr6+IiIiIc3Nz
+c1xcXFwrKysrFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAYGBgYUFBQUGhoaGjo6Ojp5eXl5mZmZmbGxsbHj4+Pj+/v7+/z8/Pz+/v7+////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////7+/v78/Pz8+/v7++Pj4+OxsbGxmZmZmXl5eXk6Ojo6Ghoa
+GhQUFBQGBgYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQU
+FCMjIyNBQUFBUFBQUGhoaGiampqasrKyssXFxcXp6enp/Pz8/Pz8/Pz/////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////8/Pz8/Pz8/Onp6enFxcXFsrKyspqamppoaGhoUFBQUEFBQUEjIyMjFBQU
+FA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PDw8uLi4uPT09PV1dXV2dnZ2dvb29
+vcfHx8fc3Nzc5ubm5uzs7Oz4+Pj4/v7+/v7+/v7/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////+/v7+/v7+/vj4+Pjs7Ozs5ubm5tzc3NzHx8fHvb29vZ2dnZ1dXV1dPT09PS4uLi4PDw8PAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQ9PT09UVFRUXl5eXnLy8vL8/Pz8/b29vb8/Pz8////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////z8/Pz29vb28/Pz88vLy8t5eXl5UVFRUT09PT0UFBQUAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAcHBwcVFRUVHBwcHDQ0NDRkZGRkfHx8fJqamprY2NjY9vb29vj4+Pj9/f39////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//39/f34+Pj49vb29tjY2NiampqafHx8fGRkZGQ0NDQ0HBwcHBUVFRUHBwcHAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZW
+VnV1dXW0tLS009PT097e3t7x8fHx/Pz8/Pz8/Pz/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////8/Pz8/Pz8
+/PHx8fHe3t7e09PT07S0tLR1dXV1VlZWVkFBQUEVFRUVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwcHBxWVlZWcnJycpWVlZXb29vb/v7+
+/v7+/v7/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////+/v7+/v7+
+/tvb29uVlZWVcnJyclZWVlYcHBwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFDQ0NDR1dXV1lZWVla+vr6/k5OTk/v7+/v7+/v7/////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////+/v7+/v7+/uTk5OSvr6+vlZWV
+lXV1dXU0NDQ0FBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA8PDw8uLi4uPT09PWRkZGS0tLS029vb2+Tk5OT29vb2////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////b29vbk5OTk29vb27S0tLRkZGRkPT09
+PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQ9PT09UVFR
+UXx8fHzT09PT/v7+/v7+/v7/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////+/v7+/v7+/tPT09N8fHx8UVFRUT09PT0UFBQUAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEFBQUFBgYGBiMjIyNcXFxceXl5eZqamprd3d3d/v7+
+/v7+/v7/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////+/v7+/v7+/t3d3d2ampqaeXl5eVxcXFwjIyMjBgYGBgUFBQUBAQEBAAAA
+AAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFEFBQUGenp6ey8vLy9jY2Njy8vLy////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////Ly8vLY2NjYy8vLy56enp5BQUFBFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAA
+AAYGBgYUFBQUGhoaGlBQUFC9vb298/Pz8/b29vb8/Pz8////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//z8/Pz29vb28/Pz8729vb1QUFBQGhoaGhQUFBQGBgYGAAAAAAAAAAAAAAAAAAAAAA4ODg4sLCwsOjo6
+OmlpaWnHx8fH9vb29vj4+Pj9/f39////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////39/f34+Pj49vb2
+9sfHx8dpaWlpOjo6OiwsLCwODg4OAAAAAAAAAAAAAAAAAAAAAB4eHh5cXFxcenp6epubm5vb29vb/Pz8
+/Pz8/Pz/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////8/Pz8/Pz8/Nvb29uampqaeXl5
+eVtbW1seHh4eAAAAAAAAAAAAAAAAAAAAACYmJiZ0dHR0mpqamrOzs7Pm5ubm////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////+bm5uaysrKymZmZmXNzc3MmJiYmAAAA
+AAAAAAAHBwcHBwcHBzIyMjKIiIiIs7Ozs8bGxsbs7Ozs////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////+/v7+/v7+/vj4+Pjr6+vr5eXl5ebm5ubn5+fn6Ojo6O3t7e36+vr6////
+/////////////////////////////////+zs7OzExMTEsbGxsYaGhoYyMjIyBwcHBwcHBwcXFxcXFxcX
+F0pKSkqwsLCw4+Pj4+rq6ur4+Pj4////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//7+/v78/Pz8+/v7++np6enCwsLCsLCwsLKysrK3t7e3ubm5ucrKysrt7e3t/v7+/v7+/v7/////////
+//////////////////j4+Pjq6urq4+Pj47CwsLBKSkpKFxcXFxcXFxceHh4eHh4eHlZWVlbExMTE/Pz8
+/Pz8/Pz/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7+/v77+/v7+vr6
++uHh4eGvr6+vlpaWlpmZmZmfn5+foqKiorm5ubnn5+fn/v7+/v7+/v7/////////////////////////
+//7+/v78/Pz8+/v7+8TExMRVVVVVHh4eHh4eHh40NDQ0NDQ0NGZmZmbKysrK/Pz8/Pz8/Pz/////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////+/v7+/v7+/vLy8vLb29vbz8/Pz7i4uLiIiIiIcXFx
+cXNzc3N4eHh4enp6epaWlpbMzMzM6Ojo6O3t7e36+vr6///////////////////////////8/Pz8/Pz8
+/MrKyspmZmZmNDQ0NDQ0NDRgYGBgYGBgYIeHh4fY2NjY////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////7+/v77+/v7+vr6+tnZ2dmYmJiYd3d3d2NjY2M5OTk5JSUlJSYmJiYnJycnKCgo
+KE1NTU2Xl5eXvLy8vMzMzMzv7+/v///////////////////////////+/v7+/v7+/tfX19eHh4eHYGBg
+YGBgYGB2dnZ2dnZ2dpiYmJjd3d3d////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//7+/v76+vr6+fn5+c7Ozs53d3d3TExMTDk5OTkTExMTAAAAAAAAAAAAAAAAAAAAACkpKSl9fX19pqam
+pry8vLzp6enp/////////////////////////////////////93d3d2YmJiYdnZ2dnZ2dnaHh4eHh4eH
+h6WlpaXh4eHh////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////+/v7+/v7+/vLy8vLZ2dnZzc3N
+zaioqKheXl5eOTk5OSsrKysODg4OAAAAAAAAAAAAAAAAAAAAACkpKSl7e3t7pKSkpLq6urrp6enp////
+/////////////////////////////////+Hh4eGlpaWlh4eHh4eHh4eoqKioqKioqL29vb3q6urq////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////7+/v77+/v7+vr6+tnZ2dmYmJiYd3d3d15eXl4sLCwsExMT
+Ew8PDw8EBAQEAAAAAAAAAAAAAAAAAAAAACgoKCh4eHh4oKCgoLe3t7fo6Ojo////////////////////
+/////////////////+rq6uq9vb29qKioqKioqKi5ubm5ubm5ucrKysru7u7u////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////7+/v76+vr6+fn5+c3Nzc13d3d3S0tLSzk5OTkSEhISAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACcnJyd3d3d3np6enra2trbn5+fn////////////////////////////////////
+/+7u7u7KysrKubm5ubm5ubnExMTExMTExNLS0tLx8fHx////////////////////////////////////
+//////////////////r6+vrt7e3t6Ojo6Ofn5+fn5+fn5ubm5uzs7Oz4+Pj4/v7+/v7+/v7/////////
+///////////////////////////////////////////////////////////////////////+/v7+/v7+
+/vLy8vLZ2dnZzc3NzaioqKheXl5eOTk5OSsrKysODg4OAAAAAAAAAAAAAAAAAAAAAAUFBQUQEBAQFRUV
+FT09PT2Ojo6Otra2tsjIyMjt7e3t//////////////////////////////////////Hx8fHS0tLSxMTE
+xMTExMTa2tra2tra2uPj4+P29vb2///////////////////////////////////////////+/v7+/v7+
+/uzs7OzJycnJt7e3t7a2traysrKysbGxscTExMTp6enp/Pz8/Pz8/Pz/////////////////////////
+//////////////////////////////////////////////////7+/v76+vr6+fn5+djY2NiXl5eXdnZ2
+dl1dXV0rKysrEhISEg4ODg4EBAQEAAAAAAAAAAAAAAAAAAAAABAQEBAxMTExQUFBQWpqamq7u7u75OTk
+5Orq6ur5+fn5//////////////////////////////////////b29vbi4uLi2dnZ2dnZ2dnl5eXl5eXl
+5evr6+v5+fn5///////////////////////////////////////////+/v7+/v7+/ufn5+e3t7e3oKCg
+oJ6enp6ampqamJiYmLCwsLDj4+Pj+/v7+/z8/Pz+/v7+////////////////////////////////////
+//////////////////////////////////7+/v75+fn5+Pj4+MzMzMx2dnZ2SkpKSjg4ODgSEhISAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVoCAgIDS0tLS/Pz8/Pz8/Pz/////////
+//////////////////////////////////n5+fnq6urq5OTk5OTk5OTq6urq6urq6u/v7+/6+vr6////
+//////////////////////////////////n5+fnt7e3t5+fn58zMzMyTk5OTeHh4eHZ2dnZ0dHR0cnJy
+coqKioq5ubm50dHR0dzc3Nzz8/Pz/v7+/v7+/v7/////////////////////////////////////////
+///////+/v7+/v7+/vLy8vLY2NjYzMzMzKenp6ddXV1dODg4OCoqKioODg4OAAAAAAAAAAAAAAAAAAAA
+AAUFBQUQEBAQFRUVFS8vLy9lZWVlf39/f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////////////////////
+//////////////////r6+vru7u7u6enp6enp6en09PT09PT09Pb29vb9/f39////////////////////
+/////////////////+3t7e3JycnJt7e3t5SUlJRLS0tLKCgoKCcnJycnJycnJiYmJjs7OztmZmZme3t7
+e5ubm5vb29vb+/v7+/z8/Pz+/v7+//////////////////////////////////////7+/v76+vr6+fn5
++djY2NiXl5eXdnZ2dl1dXV0rKysrEhISEg4ODg4EBAQEAAAAAAAAAAAAAAAAAAAAABAQEBAxMTExQUFB
+QWVlZWWurq6u0tLS0t3d3d309PT0////////////////////////////////////////////////////
+//39/f329vb29PT09PT09PT5+fn5+fn5+fr6+vr+/v7+////////////////////////////////////
+/+jo6Oi3t7e3oKCgoHh4eHgoKCgoAAAAAAAAAAAAAAAAAAAAABQUFBQ9PT09UVFRUXt7e3vQ0NDQ+vr6
++vv7+/v+/v7+//////////////////////////////////////7+/v75+fn5+Pj4+MzMzMx2dnZ2SkpK
+Sjg4ODgSEhISAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVn9/f3/S0tLS+/v7
++/z8/Pz+/v7+//////////////////////////////////////////////////////7+/v76+vr6+fn5
++fn5+fn5+fn5+fn5+fr6+vr+/v7+/////////////////////////////////////+fn5+e2tra2np6e
+nnd3d3cnJycnAAAAAAAAAAAAAAAAAAAAAA8PDw8uLi4uPT09PWJiYmKrq6ur0NDQ0Nvb29vz8/Pz/v7+
+/v7+/v7////////////////+/v7+/v7+/vLy8vLY2NjYzMzMzKenp6ddXV1dODg4OCoqKioODg4OAAAA
+AAAAAAAAAAAAAAAAAAUFBQUQEBAQFRUVFS8vLy9lZWVlf39/f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////
+//////////////////////////////////////////////////7+/v76+vr6+fn5+fn5+fn5+fn5+fn5
++fr6+vr+/v7+/////////////////////////////////////+bm5uazs7OzmpqamnR0dHQmJiYmAAAA
+AAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFC0tLS1iYmJie3t7e5ubm5vb29vb+/v7+/z8/Pz+/v7+////
+//7+/v76+vr6+fn5+djY2NiWlpaWdXV1dVxcXFwrKysrEhISEg4ODg4EBAQEAAAAAAAAAAAAAAAAAAAA
+ABAQEBAxMTExQUFBQWVlZWWurq6u0tLS0t3d3d3z8/Pz/v7+/v7+/v7/////////////////////////
+//////////////////////////////////7+/v76+vr6+fn5+fn5+fn5+fn5+fn5+fr6+vr+/v7+////
+/////////////////////////////////+bm5uaxsbGxmJiYmHJycnImJiYmAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABQUFBQ9PT09UVFRUXt7e3vQ0NDQ+vr6+vv7+/v+/v7+//////7+/v75+fn5+Pj4
++MzMzMx1dXV1SUlJSTc3NzcSEhISAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZW
+Vn9/f3/S0tLS+/v7+/z8/Pz+/v7+////////////////////////////////////////////////////
+//////////////////7+/v76+vr6+fn5+fn5+fn09PT09PT09Pb29vb9/f39////////////////////
+/////////////////+zs7OzDw8PDsLCwsImJiYk7Ozs7FBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAA
+AA8PDw8uLi4uPT09PWJiYmKrq6ur0NDQ0Nvb29vx8fHx/Pz8/PDw8PDY2NjYzMzMzKampqZdXV1dNzc3
+NyoqKioNDQ0NAAAAAAAAAAAAAAAAAAAAAAUFBQUQEBAQFRUVFS8vLy9lZWVlf39/f5+fn5/c3Nzc/Pz8
+/Pz8/Pz/////////////////////////////////////////////////////////////////////////
+//39/f329vb29PT09PT09PTp6enp6enp6e7u7u76+vr6////////////////////////////////////
+//j4+Pjq6urq4+Pj47q6urpmZmZmPT09PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQU
+FC0tLS1iYmJie3t7e5qamprW1tbW9fX19dXV1dWUlJSUdHR0dFtbW1srKysrEhISEg4ODg4EBAQEAAAA
+AAAAAAAAAAAAAAAAABAQEBAxMTExQUFBQWVlZWWurq6u0tLS0t3d3d3z8/Pz/v7+/v7+/v7/////////
+//////////////////////////////////////////////////////////////////r6+vru7u7u6enp
+6enp6enk5OTk5OTk5Orq6ur5+fn5//////////////////////////////////////7+/v78/Pz8+/v7
++9HR0dF7e3t7UVFRUT09PT0UFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQ9PT09UVFR
+UXl5eXnKysrK8vLy8sjIyMhycnJySEhISDY2NjYSEhISAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ABUVFRVBQUFBVlZWVn9/f3/S0tLS+/v7+/z8/Pz+/v7+////////////////////////////////////
+//////////////////////////////////////////////////n5+fnq6urq5OTk5OTk5OTZ2dnZ2dnZ
+2eLi4uL29vb2///////////////////////////////////////////8/Pz8/Pz8/Nvb29ucnJyce3t7
+e2JiYmItLS0tFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAA8PDw8uLi4uPT09PVxcXFybm5uburq6
+upmZmZlXV1dXNjY2NikpKSkNDQ0NAAAAAAAAAAAAAAAAAAAAAAUFBQUQEBAQFRUVFS8vLy9lZWVlf39/
+f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////////////////////////////////////////////////////
+//////////////////////////////////b29vbi4uLi2dnZ2dnZ2dnExMTExMTExNLS0tLx8fHx////
+///////////////////////////////////////+/v7+/v7+/vPz8/Pb29vb0NDQ0Kurq6tiYmJiPT09
+PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFCEhISE+Pj4+S0tLSz09PT0gICAgEhIS
+Eg4ODg4EBAQEAAAAAAAAAAAAAAAAAAAAABAQEBAxMTExQUFBQWVlZWWurq6u0tLS0t3d3d3z8/Pz/v7+
+/v7+/v7/////////////////////////////////////////////////////////////////////////
+//////////////////Hx8fHS0tLSxMTExMTExMS5ubm5ubm5ucrKysru7u7u////////////////////
+//////////////////////////////////7+/v77+/v7+vr6+tDQ0NB7e3t7UVFRUT09PT0UFBQUAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQPDw8PExMTEw8PDw8EBAQEAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVn9/f3/S0tLS+/v7+/z8/Pz+/v7+////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/+7u7u7KysrKubm5ubm5ubmoqKioqKioqL29vb3q6urq////////////////////////////////////
+//////////////////7+/v78/Pz8+/v7+9vb29ubm5ube3t7e2JiYmItLS0tFBQUFA8PDw8FBQUFAAAA
+AAAAAAAAAAAAAAAAAAMDAwMMDAwMDw8PDwwMDAwDAwMDAAAAAAAAAAAAAAAAAAAAAAUFBQUQEBAQFRUV
+FS8vLy9lZWVlf39/f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////+rq6uq9vb29qKio
+qKioqKiHh4eHh4eHh6WlpaXh4eHh////////////////////////////////////////////////////
+///////+/v7+/v7+/vPz8/Pb29vb0NDQ0Kurq6tiYmJiPT09PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAA
+AAEBAQEDAwMDBAQEBAMDAwMBAQEBAAAAAAAAAAAAAAAAAAAAABAQEBAxMTExQUFBQWVlZWWurq6u0tLS
+0t3d3d3z8/Pz/v7+/v7+/v7/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////+Hh4eGlpaWlh4eHh4eHh4d2dnZ2dnZ2
+dpiYmJjd3d3d////////////////////////////////////////////////////////////////////
+//7+/v77+/v7+vr6+tDQ0NB7e3t7UVFRUT09PT0UFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVn9/f3/S0tLS+/v7+/z8/Pz+/v7+////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////93d3d2YmJiYdnZ2dnZ2dnZgYGBgYGBgYIeHh4fX19fX/v7+
+/v7+/v7///////////////////////////////////////////////////////////7+/v78/Pz8+/v7
++9vb29ubm5ube3t7e2JiYmItLS0tFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAUFBQUQEBAQFRUVFS8vLy9lZWVlf39/f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////+/v7+/v7+/tfX19eHh4eHYGBgYGBgYGA0NDQ0NDQ0NGZmZmbKysrK/Pz8/Pz8/Pz/////////
+///////////////////////////////////////////////////////+/v7+/v7+/vPz8/Pb29vb0NDQ
+0Kurq6tiYmJiPT09PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAxMTExQUFB
+QWVlZWWurq6u0tLS0t3d3d3z8/Pz/v7+/v7+/v7/////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////8/Pz8/Pz8
+/MrKyspmZmZmNDQ0NDQ0NDQeHh4eHh4eHlVVVVXExMTE+/v7+/z8/Pz+/v7+////////////////////
+//////////////////////////////////////////////////7+/v77+/v7+vr6+tDQ0NB7e3t7UVFR
+UT09PT0UFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVn9/f3/S0tLS+/v7
++/z8/Pz+/v7+////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////7+/v78/Pz8+/v7+8TExMRVVVVVHh4e
+Hh4eHh4XFxcXFxcXF0pKSkqwsLCw4+Pj4+rq6ur4+Pj4////////////////////////////////////
+//////////////////////////////////7+/v78/Pz8+/v7+9vb29ubm5ube3t7e2JiYmIwMDAwFxcX
+FxISEhIHBwcHAgICAggICAgSEhISGBgYGDExMTFmZmZmf39/f5+fn5/c3Nzc/Pz8/Pz8/Pz/////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////j4+Pjq6urq4+Pj47CwsLBKSkpKFxcXFxcXFxcHBwcHBwcH
+BzIyMjKHh4eHsrKyssXFxcXs7Ozs////////////////////////////////////////////////////
+///////////////////////+/v7+/v7+/vPz8/Pb29vb0NDQ0K6urq5qampqSEhISDg4ODgYGBgYCAgI
+CBgYGBg7Ozs7S0tLS21tbW2wsLCw0tLS0t3d3d3z8/Pz/v7+/v7+/v7/////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////+zs7OzExMTEsbGxsYaGhoYyMjIyBwcHBwcHBwcAAAAAAAAAACYmJiZ0dHR0mpqa
+mrOzs7Pm5ubm////////////////////////////////////////////////////////////////////
+//////////////////7+/v77+/v7+vr6+tPT09OGhoaGX19fX0pKSkofHx8fCgoKCiAgICBNTU1NY2Nj
+Y4mJiYnV1dXV+/v7+/z8/Pz+/v7+////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/+bm5uaysrKymZmZmXNzc3MmJiYmAAAAAAAAAAAAAAAAAAAAAB4eHh5cXFxcenp6epubm5vb29vb/Pz8
+/Pz8/Pz/////////////////////////////////////////////////////////////////////////
+//7+/v78/Pz8+/v7+97e3t6kpKSkh4eHh3d3d3dXV1dXR0dHR1hYWFh5eXl5ioqKiqenp6ff39/f/Pz8
+/Pz8/Pz/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////8/Pz8/Pz8/Nvb29uampqaeXl5
+eVtbW1seHh4eAAAAAAAAAAAAAAAAAAAAAA4ODg4sLCwsOjo6OmlpaWnHx8fH9vb29vj4+Pj9/f39////
+///////////////////////////////////////////////////////////////////////+/v7+/v7+
+/vT09PTh4eHh19fX19LS0tLHx8fHwsLCwsjIyMjS0tLS2NjY2OHh4eH19fX1/v7+/v7+/v7/////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////39/f34+Pj49vb29sfHx8dpaWlpOjo6OiwsLCwODg4OAAAA
+AAAAAAAAAAAAAAAAAAYGBgYUFBQUGhoaGlBQUFC9vb298/Pz8/b29vb8/Pz8////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////z8/Pz29vb28/Pz8729vb1QUFBQGhoaGhQUFBQGBgYGAAAAAAAAAAAAAAAAAAAA
+AAUFBQUPDw8PFBQUFEFBQUGenp6ey8vLy9jY2Njy8vLy////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//Ly8vLY2NjYy8vLy56enp5BQUFBFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAEBAQEFBQUFBgYG
+BiMjIyNcXFxceXl5eZqamprd3d3d/v7+/v7+/v7/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////+/v7+/v7+/t3d3d2ampqaeXl5
+eVxcXFwjIyMjBgYGBgUFBQUBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQ9PT09UVFR
+UXx8fHzT09PT/v7+/v7+/v7/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////+/v7+/v7+/tPT09N8fHx8UVFRUT09PT0UFBQUAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PDw8uLi4uPT09PWRkZGS0tLS029vb
+2+Tk5OT29vb2////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////b29vbk5OTk29vb27S0tLRkZGRkPT09PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFDQ0NDR1dXV1lZWVla+vr6/k5OTk/v7+
+/v7+/v7/////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////+/v7+/v7+
+/uTk5OSvr6+vlZWVlXV1dXU0NDQ0FBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwcHBxWVlZWcnJycpWVlZXb29vb/v7+/v7+/v7/////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////+/v7+/v7+/tvb29uVlZWVcnJy
+clZWVlYcHBwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABUVFRVBQUFBVlZWVnV1dXW0tLS009PT097e3t7x8fHx/Pz8/Pz8/Pz/////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////8/Pz8/Pz8/PHx8fHe3t7e09PT07S0tLR1dXV1VlZWVkFBQUEVFRUVAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAcHBwcVFRUVHBwcHDQ0NDRkZGRkfHx8fJqamprY2NjY9vb29vj4+Pj9/f39////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//39/f34+Pj49vb29tjY2NiampqafHx8fGRkZGQ0NDQ0HBwcHBUVFRUHBwcHAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ABQUFBQ9PT09UVFRUXl5eXnLy8vL8/Pz8/b29vb8/Pz8////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////z8/Pz29vb28/Pz
+88vLy8t5eXl5UVFRUT09PT0UFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PDw8uLi4uPT09
+PV1dXV2dnZ2dvb29vcfHx8fc3Nzc5ubm5uzs7Oz4+Pj4/v7+/v7+/v7/////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////+/v7+/v7+/vj4+Pjs7Ozs5ubm5tzc3NzHx8fHvb29vZ2dnZ1dXV1dPT09
+PS4uLi4PDw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFCMjIyNBQUFBUFBQ
+UGhoaGibm5ubs7Ozs8bGxsbp6enp/Pz8/Pz8/Pz/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////8/Pz8/Pz8/Onp6enGxsbGs7Ozs5ubm5toaGhoUFBQUEFBQUEjIyMjFBQUFA8PDw8FBQUFAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgYUFBQUGhoaGjo6Ojp6enp6mpqa
+mrKysrLj4+Pj+/v7+/z8/Pz+/v7+////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7+/v78/Pz8+/v7
+++Pj4+OysrKympqamnp6eno6Ojo6GhoaGhQUFBQGBgYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUFBQUPDw8PFBQUFCwsLCxcXFxcdHR0dIiIiIiwsLCwxMTE
+xMrKysrX19fX3d3d3eHh4eHq6urq7u7u7vHx8fH29vb2+fn5+fr6+vr9/f39/v7+/v7+/v7+/v7+/v7+
+/v39/f36+vr6+fn5+fb29vbx8fHx7u7u7urq6urh4eHh3d3d3dfX19fKysrKxMTExLCwsLCIiIiIdHR0
+dFxcXFwsLCwsFBQUFA8PDw8FBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAEBAQEFBQUFBgYGBg4ODg4eHh4eJiYmJjIyMjJJSUlJVVVVVWZmZmaHh4eHmJiY
+mKSkpKS+vr6+ysrKytLS0tLi4uLi6urq6u7u7u729vb2+vr6+vr6+vr6+vr6+vr6+vb29vbu7u7u6urq
+6uLi4uLS0tLSysrKyr6+vr6kpKSkmJiYmIeHh4dmZmZmVVVVVUlJSUkyMjIyJiYmJh4eHh4ODg4OBgYG
+BgUFBQUBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBwcXFxcXHh4eHjQ0NDRgYGBgdnZ2doeHh4eoqKioubm5
+ucTExMTZ2dnZ5OTk5Onp6en09PT0+fn5+fn5+fn5+fn5+fn5+fT09PTp6enp5OTk5NnZ2dnExMTEubm5
+uaioqKiHh4eHdnZ2dmBgYGA0NDQ0Hh4eHhcXFxcHBwcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAcHBwcXFxcXHh4eHjQ0NDRgYGBgdnZ2doeHh4eoqKioubm5ucTExMTZ2dnZ5OTk
+5Onp6en09PT0+fn5+fn5+fn5+fn5+fn5+fT09PTp6enp5OTk5NnZ2dnExMTEubm5uaioqKiHh4eHdnZ2
+dmBgYGA0NDQ0Hh4eHhcXFxcHBwcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgEAAAMAAAABAEgAAAEBAAMA
+AAABAEgAAAECAAMAAAAEAABR9gEDAAMAAAABAAEAAAEGAAMAAAABAAIAAAEKAAMAAAABAAEAAAERAAQA
+AAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMAAAABAEgAAAEXAAQAAAABAABRAAEaAAUA
+AAABAABR5gEbAAUAAAABAABR7gEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAFSAAMAAAABAAEAAAFTAAMA
+AAAEAABR/odzAAcAAAxIAABSBgAAAAAAAADYAAAAAQAAANgAAAABAAgACAAIAAgAAQABAAEAAQAADEhM
+aW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAA
+AAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoA
+AAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQA
+AANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMA
+AAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhl
+d2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAA
+AAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAA
+AG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAA
+AAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2
+MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2
+Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABk
+ZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAA
+AAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAA
+TAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBj
+dXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIA
+dwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0B
+EwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB
+6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwAD
+CwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEE
+fgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcG
+SAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoI
+bgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK
+8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN
+3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMR
+MRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U
+8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZ
+IBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkd
+wx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i
+3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8o
+cSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwu
+gi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1
+EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8
+JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31D
+wEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL
+4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJU
+j1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhd
+yV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1n
+k2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx
+8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF8
+4X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASI
+aYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCU
+ipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNih
+R6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2u
+oa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8
+m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfL
+Nsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHa
+dtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDq
+W+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf6
+5/t3/Af8mP0p/br+S/7c/23//9IsLUhJXk5TTXV0YWJsZUFycmF5o0gzMdVLTE1OD09QUVJTV05TV2hp
+dGVcTlNDb21wb25lbnRzXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29sb3JTcGFjZUQwIDAAQzAgMBAD
+gBKAFdRVVlcPWFlaW1ROU0lEVU5TSUNDV05TTW9kZWwQCYATEACAFE8REWgAABFoYXBwbAIAAABtbnRy
+R1JBWVhZWiAH3AAIABcADwAuAA9hY3NwQVBQTAAAAABub25lAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAA
+AADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVkZXNj
+AAAAwAAAAHlkc2NtAAABPAAAB+hjcHJ0AAAJJAAAACN3dHB0AAAJSAAAABRrVFJDAAAJXAAACAxkZXNj
+AAAAAAAAAB9HZW5lcmljIEdyYXkgR2FtbWEgMi4yIFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+bWx1YwAAAAAAAAAfAAAADHNrU0sAAAAuAAABhGRhREsAAAA4AAABsmNhRVMAAAA4AAAB6nZpVk4AAABA
+AAACInB0QlIAAABKAAACYnVrVUEAAAAsAAACrGZyRlUAAAA+AAAC2Gh1SFUAAAA0AAADFnpoVFcAAAAe
+AAADSm5iTk8AAAA6AAADaGNzQ1oAAAAoAAADomhlSUwAAAAkAAADyml0SVQAAABOAAAD7nJvUk8AAAAq
+AAAEPGRlREUAAABOAAAEZmtvS1IAAAAiAAAEtHN2U0UAAAA4AAABsnpoQ04AAAAeAAAE1mphSlAAAAAm
+AAAE9GVsR1IAAAAqAAAFGnB0UE8AAABSAAAFRG5sTkwAAABAAAAFlmVzRVMAAABMAAAF1nRoVEgAAAAy
+AAAGInRyVFIAAAAkAAAGVGZpRkkAAABGAAAGeGhySFIAAAA+AAAGvnBsUEwAAABKAAAG/HJ1UlUAAAA6
+AAAHRmVuVVMAAAA8AAAHgGFyRUcAAAAsAAAHvABWAWEAZQBvAGIAZQBjAG4A4QAgAHMAaQB2AOEAIABn
+AGEAbQBhACAAMgAsADIARwBlAG4AZQByAGkAcwBrACAAZwByAOUAIAAyACwAMgAgAGcAYQBtAG0AYQBw
+AHIAbwBmAGkAbABHAGEAbQBtAGEAIABkAGUAIABnAHIAaQBzAG8AcwAgAGcAZQBuAOgAcgBpAGMAYQAg
+ADIALgAyAEMepQB1ACAAaADsAG4AaAAgAE0A4AB1ACAAeADhAG0AIABDAGgAdQBuAGcAIABHAGEAbQBt
+AGEAIAAyAC4AMgBQAGUAcgBmAGkAbAAgAEcAZQBuAOkAcgBpAGMAbwAgAGQAYQAgAEcAYQBtAGEAIABk
+AGUAIABDAGkAbgB6AGEAcwAgADIALAAyBBcEMAQzBDAEOwRMBD0EMAAgAEcAcgBhAHkALQQzBDAEPAQw
+ACAAMgAuADIAUAByAG8AZgBpAGwAIABnAOkAbgDpAHIAaQBxAHUAZQAgAGcAcgBpAHMAIABnAGEAbQBt
+AGEAIAAyACwAMgDBAGwAdABhAGwA4QBuAG8AcwAgAHMAegD8AHIAawBlACAAZwBhAG0AbQBhACAAMgAu
+ADKQGnUocHCWjlFJXqYAIAAyAC4AMgAggnJfaWPPj/AARwBlAG4AZQByAGkAcwBrACAAZwByAOUAIABn
+AGEAbQBtAGEAIAAyACwAMgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgDhACABYQBlAGQA4QAgAGcAYQBt
+AGEAIAAyAC4AMgXSBdAF3gXUACAF0AXkBdUF6AAgBdsF3AXcBdkAIAAyAC4AMgBQAHIAbwBmAGkAbABv
+ACAAZwByAGkAZwBpAG8AIABnAGUAbgBlAHIAaQBjAG8AIABkAGUAbABsAGEAIABnAGEAbQBtAGEAIAAy
+ACwAMgBHAGEAbQBhACAAZwByAGkAIABnAGUAbgBlAHIAaQBjAQMAIAAyACwAMgBBAGwAbABnAGUAbQBl
+AGkAbgBlAHMAIABHAHIAYQB1AHMAdAB1AGYAZQBuAC0AUAByAG8AZgBpAGwAIABHAGEAbQBtAGEAIAAy
+ACwAMsd8vBgAINaMwMkAIKwQucgAIAAyAC4AMgAg1QS4XNMMx3xmbpAacHBepnz7ZXAAIAAyAC4AMgAg
+Y8+P8GWHTvZOAIIsMLAw7DCkMKww8zDeACAAMgAuADIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAg
+A5MDugPBA7kAIAOTA6wDvAO8A7EAIAAyAC4AMgBQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAg
+AGQAZQAgAGMAaQBuAHoAZQBuAHQAbwBzACAAZABhACAARwBhAG0AbQBhACAAMgAsADIAQQBsAGcAZQBt
+AGUAZQBuACAAZwByAGkAagBzACAAZwBhAG0AbQBhACAAMgAsADIALQBwAHIAbwBmAGkAZQBsAFAAZQBy
+AGYAaQBsACAAZwBlAG4A6QByAGkAYwBvACAAZABlACAAZwBhAG0AbQBhACAAZABlACAAZwByAGkAcwBl
+AHMAIAAyACwAMg4jDjEOBw4qDjUOQQ4BDiEOIQ4yDkAOAQ4jDiIOTA4XDjEOSA4nDkQOGwAgADIALgAy
+AEcAZQBuAGUAbAAgAEcAcgBpACAARwBhAG0AYQAgADIALAAyAFkAbABlAGkAbgBlAG4AIABoAGEAcgBt
+AGEAYQBuACAAZwBhAG0AbQBhACAAMgAsADIAIAAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQEN
+AGsAaQAgAEcAcgBhAHkAIABHAGEAbQBtAGEAIAAyAC4AMgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQBy
+AHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAAcwB6AGEAcgBvAVsAYwBpACAAZwBhAG0AbQBhACAAMgAs
+ADIEHgQxBEkEMARPACAEQQQ1BEAEMARPACAEMwQwBDwEPAQwACAAMgAsADIALQQ/BEAEPgREBDgEOwRM
+AEcAZQBuAGUAcgBpAGMAIABHAHIAYQB5ACAARwBhAG0AbQBhACAAMgAuADIAIABQAHIAbwBmAGkAbABl
+BjoGJwZFBicAIAAyAC4AMgAgBkQGSAZGACAGMQZFBicGLwZKACAGOQYnBkV0ZXh0AAAAAENvcHlyaWdo
+dCBBcHBsZSBJbmMuLCAyMDEyAABYWVogAAAAAAAA81EAAQAAAAEWzGN1cnYAAAAAAAAEAAAAAAUACgAP
+ABQAGQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCk
+AKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFM
+AVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4
+AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNy
+A34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+
+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0Qbj
+BvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAkl
+CToJTwlkCXkJjwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvI
+C+EL+QwSDCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7S
+Du4PCQ8lD0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJF
+EmQShBKjEsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYm
+FkkWbBaPFrIW1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3
+Gp4axRrsGxQbOxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+
+H2kflB+/H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8
+JKsk2iUJJTglaCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1
+KmgqmyrPKwIrNitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBs
+MKQw2zESMUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426Tck
+N2A3nDfXOBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5g
+PqA+4D8hP2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYi
+RmdGq0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5u
+TrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dE
+V5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2Cq
+YPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqf
+avdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUo
+dYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBH
+gKiBCoFrgc2CMIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8
+jGOMyo0xjZiN/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhM
+mLiZJJmQmfyaaJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4
+pammGqaLpv2nbqfgqFKoxKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LC
+szizrrQltJy1E7WKtgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDs
+wWfB48JfwtvDWMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+4
+0DnQutE80b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p
+36/gNuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A
+78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//
+0iwtXl9cTlNDb2xvclNwYWNlomAxXE5TQ29sb3JTcGFjZdIsLWJjV05TQ29sb3KiYjHSLC1lZldOU0lt
+YWdlomUxAAgAEQAaACQAKQAyADcASQBMAFEAUwBtAHMAgACHAJYAnQCqALEAuQC7AL0AvwDEAMYAyADR
+ANYA4QDlAOcA6QDrAO0A8gD1APcA+QD7AQABFwEZARsXRRdKF1UXXhdxF3UXgBeJF44XlheZF54XoRej
+F6UXpxesF64XsEkCSQdJCkkMSQ5JEEkVSRdJGadrp3Cnf6eDp46nlqejp7CnxafKp86n0KfSp9Sn3afi
+p+in8Kfyp/Sn9qf4uWS5abl2uXm5hrmLuZO5lrmbuaMAAAAAAAACAQAAAAAAAABnAAAAAAAAAAAAAAAA
+AAC5pg
+</mutableData>
+        </image>
         <image name="lol" width="512" height="288"/>
+        <image name="manette" width="700" height="700"/>
+        <image name="mobile" width="18" height="29"/>
+        <image name="multiplayer" width="590" height="624"/>
         <image name="notification" width="22" height="24"/>
         <image name="people" width="414" height="259"/>
         <image name="profile" width="18" height="18"/>
+        <image name="ps4" width="28" height="22"/>
         <image name="settings" width="24" height="24"/>
-        <image name="uncheck" width="24" height="24"/>
+        <image name="simulation" width="650" height="650"/>
+        <image name="solo" width="500" height="612"/>
+        <image name="sport" width="628" height="592"/>
+        <image name="strategy" width="632" height="635"/>
+        <image name="switch" width="28" height="28"/>
         <image name="wow" width="300" height="168"/>
+        <image name="xbox" width="28" height="28"/>
     </resources>
 </document>

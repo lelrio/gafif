@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct Answer{
     
-    var imgAnswer:String
+    var imgAnswer:UIImage
     var textAnswer:String
     var tag:String
     

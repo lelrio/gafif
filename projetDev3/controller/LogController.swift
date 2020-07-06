@@ -71,7 +71,7 @@ class LogController: UIViewController {
            validationBTN.setTitle(title, for: .normal)
            nicknameTF.isHidden = isConnexionSegment
            viewHidden.isHidden = isConnexionSegment
-           imageHidden.isHidden = isConnexionSegment
+           //imageHidden.isHidden = isConnexionSegment
            self.passwordTF.isSecureTextEntry = true
        }
        

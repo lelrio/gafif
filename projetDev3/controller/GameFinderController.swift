@@ -3,16 +3,12 @@ import UIKit
 class GameFinderController: UIViewController {
 
     @IBOutlet weak var questionTitle: UILabel!
-    @IBOutlet weak var firstChoiceImage: UIImageView!
-    @IBOutlet weak var firstChoiceText: UILabel!
-    @IBOutlet weak var secondChoiceImage: UIImageView!
-    @IBOutlet weak var secondChoiceText: UILabel!
-    @IBOutlet weak var thirdChoiceImage: UIImageView!
-    @IBOutlet weak var thirdChoiceText: UILabel!
-    @IBOutlet weak var fourthChoiceImage: UIImageView!
-    @IBOutlet weak var fourthChoiceText: UILabel!
-    @IBOutlet weak var fifthChoiceImage: UIImageView!
-    @IBOutlet weak var fifthChoiceText: UILabel!
+
+
+//    @IBOutlet weak var image: UIImageView!
+//    
+//
+//    @IBOutlet var collectionOfLabels:[UILabel]!
     
     var choice = Choice()
     
@@ -24,17 +20,28 @@ class GameFinderController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         // Do any additional setup after loading the view.
+        
+        self.showPoster()
+        
+        
     }
     
     private func showPoster() {
-        
         switch choice.state {
         case .ongoing:
-            self.questionTitle.text = choice.currentQuestion.questionTitle
-               
-          
             
             
+             self.questionTitle.text = choice.currentQuestion.questionTitle
+             
+//             for answer in (0...choice.currentQuestion.answers.count - 1){
+//                for label in collectionOfLabels{
+//                    self.collectionOfLabels[answer].text = choice.currentQuestion.answers[answer].textAnswer
+//                }
+//
+//                self.image.image = choice.currentQuestion.answers[answer].imgAnswer
+//
+//             }
+             
         case .over:
             print("over")
 
@@ -42,6 +49,14 @@ class GameFinderController: UIViewController {
            
     }
 
+    @IBAction func makeChoice(_ sender: UIButton) {
+        self.showPoster()
+        
+        choice.goToNextQuestion()
+        
+        print("u clicked")
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
