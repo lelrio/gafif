@@ -18,6 +18,7 @@ class ChatController: JSQMessagesViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.inputToolbar.contentView?.leftBarButtonItem = nil
         navigationController?.isNavigationBarHidden = false;
         collectionView.backgroundColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
         
